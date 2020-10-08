@@ -1,0 +1,19 @@
+LIBRARY USBCANDataShare;说明.def文件相应的DLL
+
+EXPORTS                ;EXPORTS语句后列出要导出函数的名称
+
+                       ;可以在.def文件中的导出函数名后加@n，表示要导出函数的序号为n
+
+                       ;在进行函数调用时，这个序号将发挥其作用；
+
+                     
+
+                       ;.def 文件中的注释由每个注释行开始处的分号(;) 指定，且注释不能与语句共享一行
+
+ 
+
+CANDS_ResetSharedBuffer @ 1
+
+CANDS_WriteSharedBuffer @ 2
+
+CANDS_ReadSharedBuffer @ 3
